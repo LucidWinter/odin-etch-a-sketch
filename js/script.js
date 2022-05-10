@@ -1,10 +1,11 @@
 const container = document.querySelector('.container-box');
 
 function createBlock() {
-    const grid = document.createElement('div');
-    grid.classList.add('block');
+    const block = document.createElement('div');
+    block.classList.add('block');
+    block.addEventListener('mouseenter', gridHoverEffect);
 
-    container.appendChild(grid);
+    container.appendChild(block);
 }
 
 function createGrid() {
@@ -13,6 +14,10 @@ function createGrid() {
     for (let i = 0; i < gridSize; i++) {
         createBlock();
     }
+}
+
+function gridHoverEffect(){
+    this.style.backgroundColor = '#00FF00';
 }
 
 createGrid();
