@@ -1,16 +1,26 @@
 body{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0E1E4;
 }
 
 .container-box {
+    margin: 25px 0;
     display: flex;
     flex-wrap: wrap;
+    height: 640px;
     width: 640px;
+    border: 1px solid black;
 }
 
 .block {
-    height: 40px;
-    width: 40px;
-    border: 1px solid black;
+    border: 1px solid #808080;
     box-sizing: border-box;
+}
+
+.btn-set-size{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
